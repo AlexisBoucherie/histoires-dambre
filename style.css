@@ -63,15 +63,12 @@ nav ul {
     justify-content: space-around;
 }
 
-nav ul li {
-    width: 8vw;
-}
-
 nav ul li a {
     display: table-cell;
     width: 10vw;
     height: 10vh;
-    font-size: 1.3em;
+    margin-right: 5px;
+    font-size: 1.2em;
     vertical-align: middle;
     text-align: center;
     color: white;
@@ -84,7 +81,7 @@ nav ul li a:hover {
 
 /* Slogan */
 
-h2 {
+header h2 {
     color: white;
     font-size: 2.5em;
     text-shadow: #000 1px 0 10px;
@@ -92,3 +89,53 @@ h2 {
     right: 10vw;
     bottom: 10vh;
 }
+
+/* Responsive petit laptop (1072px) */
+
+@media screen and (max-width: 1072px) {
+    nav ul li a {
+        font-size: 1.1em;
+    }
+}
+
+/* Responsive tablette (984px) */
+
+@media screen and (max-width: 984px) {
+    
+    nav {
+        width: 80vw;
+    }
+    
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    header h2 {
+        font-size: 2.1em;
+    }
+}
+
+/* Responsive tablette (768px) */
+
+@media screen and (max-width: 768px) {
+    
+    header .menu {
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+    }
+
+    .branding, nav {
+        width: 100vw; /* PAS POSSIBLE DE CENTRER LA NAV ET DE FAIRE LE WRAP */
+    }
+
+    h2 {
+        max-width: 80vw;
+    }
+  }
+
+  /* Responsive smartphone (480px) */
+
+@media screen and (max-width: 480px) {
+    
+  }
