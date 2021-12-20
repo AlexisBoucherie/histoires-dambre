@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/baladecontee.jpg");
+    background-size: cover;
+}
+
+/* Bandeau du haut */
+
+.menu {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+}
+
+/* Logo et titre du site (à gauche) */
+
+.branding {
+    display: flex;
+}
+
+.branding img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.branding h1 {
+    color: white;
+}
+
+/* Navigation (à droite) */
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+}
+
+/* Slogan */
+
+h2 {
+    color: white;
+}
